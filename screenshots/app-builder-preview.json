@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Musselshell Biotech Park",
+      "hasCanvas": false,
+      "bodyTextLen": 943,
+      "bodyTextHash": "e9ec5e91b062f067c4582754b63742f63535430a1cc8aae243e8bbb81a12927c",
+      "bodyTextPrefix": "MUSSELSHELL BIOTECH PARK Roundup, Montana · county brief Save PD",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Musselshell Biotech Park",
+      "hasCanvas": false,
+      "bodyTextLen": 934,
+      "bodyTextHash": "d0da75738ed36aa02f14ce212d366e13d09478362aa2c06ca246f544c3de922d",
+      "bodyTextPrefix": "MUSSELSHELL BIOTECH PARK Roundup, Montana · county brief Park Ca",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0c0e0c;
+  --color-surface: #151815;
+  --color-raised: #1c211c;
+  --color-fg: #e8ebe4;
+  --color-muted: #8b9288;
+  --color-subtle: #5e665e;
+  --color-accent: #9aaf96;
+  --color-accent-fg: #0c0e0c;
+  --color-warn: #c4a574;
+  --color-danger: #c47a6a;
+  --color-border: color-mix(in oklab, #e8ebe4 12%, transparent);
+  --color-border-strong: color-mix(in oklab, #e8ebe4 22%, transparent);
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-border: 0 0 0 1px rgba(232, 235, 228, 0.08);
+  --shadow-border-hover: 0 0 0 1px rgba(232, 235, 228, 0.14);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1, h2, h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media print {
+  nav, .no-print, [data-nav] {
+    display: none !important;
+  }
+  body {
+    background: white;
+    color: #141614;
+  }
+  .print-break {
+    break-after: page;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
